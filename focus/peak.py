@@ -11,8 +11,9 @@ def rule_base_search(func):
     x = 0
     x_max = 0
     i = 0
+    down = 0
     while True:
-        f_current = func(x)
+        f_current = float(func(x))
         if i <= 5:
             control = 'initial'
         else:
